@@ -121,9 +121,55 @@
 // }
 // doingStuff();
 // console.log(x);
-let x="global";
-function doingStuff(x){
-    console.log(x);
-}
-doingStuff("param");
+// let x="global";
+// function doingStuff(x){
+//     console.log(x);
+// }
+// doingStuff("param");
 
+//iife(immediately invoked function expression)
+// (function(){
+//     console.log("IIFE");
+// })();
+//recursive functions:- function calling itself
+// function getRecursive(nr){
+//     console.log(nr);
+//     if(nr>0){
+//     getRecursive(--nr);
+// }
+// }
+// function logRecursive(nr){
+//     console.log("Started function:",nr);
+//     if(nr>0){
+//         logRecursive(nr-1);
+//     }
+//     else{
+//         console.log("done with recursion");
+//     }
+//     console.log("ended function:",nr);
+// }
+// logRecursive(3);
+//nested functions
+// function doOuterFunctionStuff(nr){
+//     console.log("outer function");
+//     doInnerFunctionStuff(nr);
+//     function doInnerFunctionStuff(x){
+//         console.log(x+7);
+//         console.log("I can access ineer variables:",nr);
+//     }
+// }
+// doOuterFunctionStuff(2);
+//anonymous function
+// let functionVariable=function(){
+//     console.log("NOT so secret though.");
+// };
+// //function  callback
+// function doFlexibleStuff(executeStuff){
+//     executeStuff();
+//     console.log("inside doFlexibleStuff.");
+// }
+let youGotThis=function(){
+    console.log("You're doing really well,");
+};
+//setTimeout(youGotThis,1000);
+setInterval(youGotThis,1000);
